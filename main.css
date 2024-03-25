@@ -1,0 +1,95 @@
+#map {
+    height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o container do input */
+.pac-container {
+    margin: 12px 12px 0 0;
+}
+
+.pac-input {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+
+    padding: 12px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+.pac-input:focus {
+    border-color: #4d90fe;
+}
+
+/* Estilos para o botão de localização */
+.custom-map-control-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5rem;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+}
+
+.custom-map-control-button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+
+#title {
+    color: #fff;
+    background-color: #acbcc9;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 6px 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Styling for an info pane that slides out from the left.
+ * Hidden by default. */
+#panel {
+    height: 100%;
+    width: null;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all .2s ease-out;
+}
+
+.open {
+    width: 250px;
+}
+
+.place {
+    font-family: 'open sans', arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-block-end: 0px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.distanceText {
+    color: silver;
+    font-family: 'open sans', arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin-block-start: 0.25em;
+    padding-left: 18px;
+    padding-right: 18px;
+}
